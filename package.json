@@ -1,0 +1,26 @@
+{
+  "name": "root",
+  "private": true,
+  "scripts": {
+    "android": "lerna run android --scope='@app/all'",
+    "android:app1": "lerna run android --scope='@app/one'",
+    "android:app2": "lerna run android --scope='@app/two'",
+    "ios": "lerna run ios --scope='@app/all'",
+    "ios:app1": "lerna run ios --scope='@app/one'",
+    "ios:app2": "lerna run ios --scope='@app/two'",
+    "start": "react-native start",
+    "test": "jest",
+    "lint": "eslint . --ext .js,.jsx,.ts,.tsx",
+    "bootstrap": "lerna bootstrap",
+    "clean": "lerna clean --yes",
+    "pod": "lerna run pod --scope='@app/all'",
+    "pod:app1": "lerna run pod --scope='@app/one'",
+    "pod:app2": "lerna run pod --scope='@app/two'"
+  },
+  "workspaces": [
+    "packages/*"
+  ],
+  "devDependencies": {
+    "lerna": "^6.0.1"
+  }
+}

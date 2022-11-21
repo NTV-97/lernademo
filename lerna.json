@@ -1,0 +1,9 @@
+{
+  "useWorkspaces": true,
+  "version": "0.0.1",
+  "npmClient": "npm",
+  "lerna": "v6.0.1",
+  "packages": [
+    "packages/**"
+  ]
+}
